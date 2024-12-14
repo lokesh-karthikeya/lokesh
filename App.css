@@ -1,0 +1,81 @@
+/* Basic styles for Google Homepage */
+.App {
+  text-align: center;
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+.main-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.logo img {
+  width: 272px;
+  height: 92px;
+  margin-top: 100px;
+}
+
+.search-bar {
+  margin-top: 20px;
+}
+
+.search-input {
+  width: 100%;
+  max-width: 580px;
+  padding: 15px;
+  font-size: 16px;
+  border-radius: 24px;
+  border: 1px solid #dcdcdc;
+  outline: none;
+  box-sizing: border-box;
+}
+
+.search-input:focus {
+  border-color: #4285f4;
+}
+
+.buttons {
+  margin-top: 20px;
+}
+
+.search-button,
+.lucky-button {
+  padding: 10px 30px;
+  font-size: 14px;
+  margin: 10px;
+  border: none;
+  border-radius: 24px;
+  background-color: #f8f8f8;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.search-button:hover,
+.lucky-button:hover {
+  background-color: #f1f1f1;
+}
+
+/* Styling for smaller screens */
+@media (max-width: 600px) {
+  .search-input {
+    max-width: 100%;
+  }
+
+  .buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .search-button,
+  .lucky-button {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
